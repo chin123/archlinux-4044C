@@ -181,6 +181,19 @@ sleepless nights).
 Open up the kaiOS browser, and go to `localhost:8080/guacamole` and you should
 be able to login and open a terminal emulator. Have fun!
 
+## Some notes and warnings
+You can automate everything above using an app, but this is left as an exercise
+to the reader. Hint: read the source code of some of the apps included in your
+device, located at `/custpack/webapps/`, and some 3rd party apps such as
+[Luxferre's adb root for the
+4044](https://groups.google.com/d/msg/bananahackers/2bMtsPpdo5I/ML4KockxBAAJ) to
+figure out how to run arbitrary commands from an app.  
+  
+Please note that you are running an arch linux chroot with root access easily
+accessible over wifi. If you plan on taking your phone outside your house and
+connecting to untrusted wifi networks, you'll probably want to setup a firewall.
+There is a simple iptables rules file located in `misc/` which you can use.
+
 ## Questions?
 If anything is unclear, or you find a mistake, feel free to open up a github
 issue or PR!
