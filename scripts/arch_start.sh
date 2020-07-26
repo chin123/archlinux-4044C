@@ -19,7 +19,7 @@ export TERM=xterm
 export HOME=/root
 export USER=root
 
-#chroot into our arch linux distro
+# execute a few commands in the chroot
 chroot $mnt /bin/bash -x <<'EOF'
 bash /root/startterm.sh
 EOF
