@@ -1,10 +1,10 @@
 # archlinux-4044C
 A guide with accompanying scripts to get a working arch linux chroot on the
-alcatel 4044C. This should work on any android/kaiOS device in general, although
+alcatel 4044C, a $40 flip phone. This should work on any android/kaiOS device in general, although
 you might have to modify the scripts to tailor them to your device.
 
 ## What we're going for
-![Terminal emulator on the 4044C](imgs/arch.jpg)
+![Terminal emulator on the 4044C](imgs/arch.jpg)  
 Here's a video of me executing some commands on the device: https://www.youtube.com/watch?v=gze_Acba490
 
 ## Prerequisites
@@ -36,6 +36,7 @@ information learned from all of these in the guide)
 	- https://github.com/chin123/guacamole-client _(optional, my fork of the
 	guacamole client with support for full screen and a more minimal on screen
 	keyboard suitable for flip phones)_
+* * Know that this will void your warranty.
 
 ## Precompiled binaries
 Trust me for some reason? Don't want to setup the NDK?
