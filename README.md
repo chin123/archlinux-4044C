@@ -1,6 +1,7 @@
 # archlinux-4044C
 A guide with accompanying scripts to get a working arch linux chroot on the
-alcatel 4044C, a $40 flip phone. This should work on any android/kaiOS device in general, although
+alcatel 4044C, a $40 flip phone with 4G and wifi support. It comes with KaiOS, a linux based mobile operating system. 
+This guide should work for any android/kaiOS device in general, although
 you might have to modify the scripts to tailor them to your device.
 
 ## What we're going for
