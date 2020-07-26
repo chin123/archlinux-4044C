@@ -3,6 +3,10 @@ A guide with accompanying scripts to get a working arch linux chroot on the
 alcatel 4044C. This should work on any android/kaiOS device in general, although
 you might have to modify the scripts to tailor them to your device.
 
+## What we're going for
+![Terminal emulator on the 4044C](imgs/arch.jpg)
+Here's a video of me executing some commands on the device: https://www.youtube.com/watch?v=gze_Acba490
+
 ## Prerequisites
 * An alcatel 4044C or similar device.  A micro SD card to store arch linux. I
 recommend atleast an 8 GB one to be comfortable, although the rootfs is only
