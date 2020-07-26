@@ -11,28 +11,28 @@ that.
 * A computer and usb cable
 * Prerequisite reading: (we will be using
 information learned from all of these in the guide)
-1. [Bananahackers page on EDL mode on kaiOS
-devices](https://sites.google.com/view/bananahackers/development/edl)
-2. [Bananahackers page on the alcatel
-OT-4044](https://sites.google.com/view/bananahackers/devices/alcatel-ot-4044)
-3. [Bananahackers page on recovery mode image
-modification](https://sites.google.com/view/bananahackers/root/recovery-mode)
+	1. [Bananahackers page on EDL mode on kaiOS
+	devices](https://sites.google.com/view/bananahackers/development/edl)
+	2. [Bananahackers page on the alcatel
+	OT-4044](https://sites.google.com/view/bananahackers/devices/alcatel-ot-4044)
+	3. [Bananahackers page on recovery mode image
+	modification](https://sites.google.com/view/bananahackers/root/recovery-mode)
 * Prerequisite downloads: (clone/download these to keep them handy)
-- https://github.com/andybalholm/edl _(required to read and write device partitions)_
-- `adb` _(required to have a root shell on the device)_
-- http://fl.us.mirror.archlinuxarm.org/os/ArchLinuxARM-armv7-latest.tar.gz
-_(required, the arch linux armv7 rootfs)_
-- Android NDK _(required if you want to compile the code yourself. Trust me for
-  some reason? If you do, you can download the pre-compiled binaries below)_.
-- [https://github.com/ubiquiti/dropbear-android](Dropbear modified for android),
-  required to obtain initial shell access outside recovery mode.
-- https://github.com/sjitech/android-gcc-toolchain _(optional, makes it easier
-  to compile dropbear-android)_
-- [Apache Guacamole](https://guacamole.apache.org/) _(required to have a
-web-based terminal emulator on the device)_
-- https://github.com/chin123/guacamole-client _(optional, my fork of the
-guacamole client with support for full screen and a more minimal on screen
-keyboard suitable for flip phones)_
+	- https://github.com/andybalholm/edl _(required to read and write device partitions)_
+	- `adb` _(required to have a root shell on the device)_
+	- http://fl.us.mirror.archlinuxarm.org/os/ArchLinuxARM-armv7-latest.tar.gz
+	_(required, the arch linux armv7 rootfs)_
+	- Android NDK _(required if you want to compile the code yourself. Trust me for
+	  some reason? If you do, you can download the pre-compiled binaries below)_.
+	- [https://github.com/ubiquiti/dropbear-android](Dropbear modified for android),
+	  required to obtain initial shell access outside recovery mode.
+	- https://github.com/sjitech/android-gcc-toolchain _(optional, makes it easier
+	  to compile dropbear-android)_
+	- [Apache Guacamole](https://guacamole.apache.org/) _(required to have a
+	web-based terminal emulator on the device)_
+	- https://github.com/chin123/guacamole-client _(optional, my fork of the
+	guacamole client with support for full screen and a more minimal on screen
+	keyboard suitable for flip phones)_
 
 ## precompiled binaries
 Trust me for some reason? Don't want to setup the NDK?
