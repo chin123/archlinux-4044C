@@ -36,7 +36,7 @@ information learned from all of these in the guide)
 	- https://github.com/chin123/guacamole-client _(optional, my fork of the
 	guacamole client with support for full screen and a more minimal on screen
 	keyboard suitable for flip phones)_
-* * Know that this will void your warranty.
+* Know that this will void your warranty.
 
 ## Precompiled binaries
 Trust me for some reason? Don't want to setup the NDK?
