@@ -1,0 +1,34 @@
+# taken from https://superuser.com/a/1341430
+*filter
+
+# drop forwarded traffic. you only need it of you are running a router
+:FORWARD DROP [0:0]
+
+# Accept all outgoing traffic
+:OUTPUT ACCEPT [623107326:1392470726908]
+
+
+# Block all incoming traffic, all protocols (tcp, udp, icmp, ...) everything.
+# This is the base rule we can define exceptions from.
+:INPUT DROP [11486:513044]
+
+# do not block already running connections (important for outgoing)
+-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+
+# do not block localhost
+-A INPUT -i lo -j ACCEPT
+
+# do not block icmp for ping and network diagnostics. Remove if you do not want this
+# note that -p icmp has no effect on ipv6, so we need an extra ipv6 rule
+-4 -A INPUT -p icmp -j ACCEPT
+-6 -A INPUT -p ipv6-icmp -j ACCEPT
+
+# allow some incoming ports for services that should be public available
+# enable the ports you deem are safe here
+#-A INPUT -p tcp -m tcp --dport 22 -j ACCEPT
+#-A INPUT -p tcp -m tcp --dport 80 -j ACCEPT
+#-A INPUT -p tcp -m tcp --dport 443 -j ACCEPT
+
+# commit changes
+COMMIT
+

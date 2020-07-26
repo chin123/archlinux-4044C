@@ -1,0 +1,4 @@
+Port 2022
+HostKey /root/.ssh/id_rsa
+UsePrivilegeSeparation no
+PidFile /root/sshd.pid
