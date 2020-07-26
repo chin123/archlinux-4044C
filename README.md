@@ -4,7 +4,7 @@ alcatel 4044C, a $40 flip phone with 4G and wifi support. It comes with KaiOS, a
 This guide should work for any android/kaiOS device in general, although
 you might have to modify the scripts to tailor them to your device.  
   
-This is one of many possible ways to get an arch chroot working, but given how little this method requires (the ability to use EDL to modify partitions), it should be applicable to the most number of devices.
+This is one of many possible ways to get an arch chroot working, but given how little this method requires (just the ability to use EDL to modify partitions), it should be applicable to the most number of devices.
 
 ## What we're going for
 ![Terminal emulator on the 4044C](imgs/arch.jpg)  
