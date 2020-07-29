@@ -1,13 +1,15 @@
 # archlinux-4044C
-A guide with accompanying scripts to get a working arch linux chroot on the
-alcatel 4044C, a $40 flip phone with 4G and wifi support. It comes with KaiOS, a linux based mobile operating system. 
-This guide should work for any android/kaiOS device in general, although
+
+## What is this?
+* A guide with accompanying scripts to get a working arch linux chroot on the
+[Alcatel 4044C](https://www.amazon.com/Alcatel-QuickFlip-Unlocked-Extrenal-Bluetooth/dp/B07PHTYGY7), a $40 flip phone with 4G and wifi support. It comes with [KaiOS](https://en.wikipedia.org/wiki/KaiOS), a linux based mobile operating system.  
+* This guide should work for any Android/KaiOS device in general, although
 you might have to modify the scripts to tailor them to your device.  
-  
-This is one of many possible ways to get an arch chroot working, but given how little this method requires (just the ability to use EDL to modify partitions), it should be applicable to the most number of devices.
+* This is one of many possible ways to get an arch chroot working, but given how little this method requires (just the ability to use EDL to modify partitions), it should be applicable to the most number of devices.
 
 ## What we're going for
 ![Terminal emulator on the 4044C](imgs/arch.jpg)  
+This is [Apache Guacamole](https://guacamole.apache.org/) loaded on the default KaiOS browser, running an ssh session logged in to the arch linux chroot.  
 Here's a video of me executing some commands on the device: https://www.youtube.com/watch?v=gze_Acba490
 
 ## Prerequisites
@@ -30,7 +32,7 @@ information learned from all of these in the guide)
 	- http://fl.us.mirror.archlinuxarm.org/os/ArchLinuxARM-armv7-latest.tar.gz
 	_(required, the arch linux armv7 rootfs)_
 	- Android NDK _(required if you want to compile the code yourself. Trust me for
-	  some reason? If you do, you can download the pre-compiled binaries below)_.
+	  some reason? You can download the pre-compiled binaries below)_.
 	- https://github.com/ubiquiti/dropbear-android, _(required to obtain initial shell access outside recovery mode)_.
 	- https://github.com/sjitech/android-gcc-toolchain _(optional, makes it easier
 	  to compile dropbear-android)_
@@ -76,7 +78,7 @@ state. Backup regularly and you can have a bit more confidence while hacking.
 ## Modify recovery image
 First, we will want adb shell access in the recovery. This will let us have
 direct shell access into the device, so that we don't have to keep flashing
-whole system partitions again and again. Follow the guide in [prerequisite
+whole system partitions. Follow the guide in [prerequisite
 reading (3)](https://sites.google.com/view/bananahackers/root/recovery-mode) and
 install adb in your recovery partition. Reboot into recovery and you should have
 full root shell access, however only in recovery mode. I was able to use `adb
